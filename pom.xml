@@ -13,6 +13,7 @@
 
 	<modules>
 		<module>happyplay-eureka</module>
+		<module>happyplay-service-test</module>
 	</modules>
 
 
