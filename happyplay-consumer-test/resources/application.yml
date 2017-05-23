@@ -1,0 +1,12 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: happyplay-consumer-test
+      
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://118.89.185.176:8761/eureka/,http://182.254.232.158:8761/eureka/    # 指定注册中心的地址
+  instance:
+    preferIpAddress: true
