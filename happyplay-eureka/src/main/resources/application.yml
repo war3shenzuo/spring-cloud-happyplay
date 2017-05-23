@@ -2,11 +2,10 @@ server:
   port: 8761                    # 指定该Eureka实例的端口
  
 eureka:
-  instance:
-    hostname: discovery         # 指定该Eureka实例的主机名
   client:
-    registerWithEureka: false
-    fetchRegistry: false
     serviceUrl:
       defaultZone: ${eurekaip:http://127.0.0.1:8761/eureka/}
+  instance:
+    preferIpAddress: true
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
     
