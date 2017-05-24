@@ -3,7 +3,7 @@ server:
 spring:
   application:
     name: happyplay-consumer-test
-      
+    
 eureka:
   client:
     serviceUrl:

@@ -3,7 +3,7 @@ server:
  
 eureka:
   client:
-    register-with-eureka: false
+    register-with-eureka: true
     serviceUrl:
       defaultZone: ${eurekaip:http://127.0.0.1:8761/eureka/}
   instance:
