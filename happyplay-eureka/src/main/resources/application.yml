@@ -1,5 +1,10 @@
 server:
-  port: 8761                    # 指定该Eureka实例的端口
+  port: 8761 
+spring:
+  application:
+    name: happyplay-eureka
+   
+                    # 指定该Eureka实例的端口
  
 eureka:
   client:
