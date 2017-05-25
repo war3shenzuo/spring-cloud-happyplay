@@ -9,5 +9,5 @@ spring:
         git:
           uri: https://github.com/war3shenzuo/spring-cloud-happyplay/    # 配置git仓库的地址
           search-paths: config-repo                             # git仓库地址下的相对地址，可以配置多个，用,分割。
-          username: war3shenzuo                                          # git仓库的账号
-          password: 1111114         
+          username:                                           # git仓库的账号
+          password:          
