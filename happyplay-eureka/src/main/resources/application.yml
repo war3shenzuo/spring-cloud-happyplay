@@ -13,5 +13,5 @@ eureka:
       defaultZone: ${toEurekaIp:http://127.0.0.1:8761/eureka/}
   instance:
     preferIpAddress: true
-    instance-id: ${localIp:127.0.0.1:8761/eureka}
+    instance-id: ${localIp:127.0.0.1:8761}
     
