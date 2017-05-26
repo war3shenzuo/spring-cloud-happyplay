@@ -1,5 +1,6 @@
 server:
   port: 8040
+  
 spring:
   application:
     name: happyplay-config-server
@@ -7,7 +8,13 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/war3shenzuo/spring-cloud-happyplay/ # 配置git仓库的地址
-          search-paths: config-repo                             # git仓库地址下的相对地址，可以配置多个，用,分割。
-          username:                                                    # git仓库的账号
-          password:          
+          uri: https://github.com/war3shenzuo/spring-cloud-happyplay/
+          search-paths: config-repo
+          username: null
+          password: null
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://118.89.185.176:8761/eureka/,http://182.254.232.158:8761/eureka/
+  instance:
+    preferIpAddress: true
