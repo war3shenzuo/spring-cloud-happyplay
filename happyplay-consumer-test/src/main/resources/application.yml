@@ -1,19 +1,2 @@
 server:
   port: 8001
-spring:
-  application:
-    name: happyplay-consumer-test
-  cloud:
-    config:
-      profile: dev
-      label: master
-      discovery:
-        enabled: true                                 # 默认false，设为true表示使用注册中心中的configserver配置而不自己配置configserver的uri
-        serviceId: happyplay-config-server  
-    
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://118.89.185.176:8761/eureka/,http://182.254.232.158:8761/eureka/    # 指定注册中心的地址
-  instance:
-    preferIpAddress: true
